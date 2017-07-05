@@ -5,3 +5,12 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+
+for i in 1..12 do
+    Host.create(
+        name: Faker::Name.name,
+        addr: Faker::Address.country,
+    )
+end
+
