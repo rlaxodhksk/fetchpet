@@ -76,16 +76,45 @@
 		<div class="container-fluid">
 		    <div class="row">
 			<div class="col-md-6 col-sm-6 col-xs-12">
-			    <form class="form-horizontal" method="post">
+			    <form class="form-horizontal" method="get" action="/skyscanner">
 				<div class="form-group " style="width:80%">
 				    <label class="control-label col-sm-2" for="dept_city" style="color:white">
 					출발지
 				    </label>
 				    <div class="col-sm-10">
-					<input class="form-control" id="dept_city" name="dept_city" placeholder="국가, 도시 또는 공항" type="text"/>
+					<input class="form-control" id="dept_city" name="dept_city" placeholder="Seoul-Incheon" type="text"/>
 				    </div>
 				</div>
+
 				<div class="form-group " style="width:80%">
+				    <label class="control-label col-sm-2" for="dept_city" style="color:white">
+					도착지
+				    </label>
+				    <div class="col-sm-10">
+					<select class="select form-control" id="arrv_city" name="arrv_city">
+					    <option value="선택해주세요">
+					    선택해주세요
+					    </option>
+					    <option value="madrid">
+					    스페인 - 마드리드
+					    </option>
+					    <option value="shanghai">
+					    중국 - 상하이
+					    </option>
+					    <option value="los-angeles-international">
+					    미국 - 로스앤젤레스
+					    </option>
+					    <option value="rome">
+					    이탈리아 - 로마
+					    </option>
+					    <option value="osaka">
+					    일본 - 오사카
+					    </option>
+					</select>
+				    </div>
+				</div>
+
+<!--				<div class="form-group " style="width:80%">
 				    <label class="control-label col-sm-2" for="dept_city" style="color:white">
 					도착지
 				    </label>
@@ -93,13 +122,14 @@
 					<input class="form-control" id="arrv_city" name="arrv_city" placeholder="국가, 도시 또는 공항" type="text"/>
 				    </div>
 				</div>
+-->
 				<div class="form-group " style="width:80%">
-				    <label class="control-label col-sm-2" for="dept_city" style="color:white">
+				    <label class="control-label col-sm-2" for="dept_date" style="color:white">
 					가는날
 				    </label>
 				    <div class="col-sm-10">
 					<div class="input-group">
-					    <input class="form-control" id="dateFO" name="dateFO" placeholder="MM/DD/YYYY" type="text"/>
+					    <input class="form-control" id="dept_date" name="dart_date" placeholder="YY/MM/DD" type="text"/>
 					    <div class="input-group-addon">
 						<i class="fa fa-calendar-check-o">
 						</i>
@@ -108,12 +138,12 @@
 				    </div>
 				</div>
 				<div class="form-group " style="width:80%">
-				    <label class="control-label col-sm-2" for="dept_city" style="color:white">
+				    <label class="control-label col-sm-2" for="arr_data" style="color:white">
 					오는날
 				    </label>
 				    <div class="col-sm-10">
 					<div class="input-group">
-					    <input class="form-control" id="arrv_date" name="arrv_date" placeholder="MM/DD/YYYY" type="text"/>
+					    <input class="form-control" id="arrv_date" name="arrv_date" placeholder="YY/MM/DD" type="text"/>
 					    <div class="input-group-addon">
 						<i class="fa fa-calendar-check-o">
 						</i>
@@ -190,6 +220,7 @@
 
 <nav class="cd-secondary-nav">
 	<ul>
+<!--
 		<li><a class="active" href="#0">Intro</a></li>
 		<li><a href="#0">Features</a></li>
 		<li><a href="#0">Photos</a></li>
@@ -197,7 +228,9 @@
 		<li><a href="#0">Specs</a></li>
 		<li><a href="#0">Support</a></li>
 		<li><a href="#0">Compare</a></li>
-		<li><a href="#0">Buy</a></li>
+-->
+		<li><a href="#0"><font size="5">다양한 Pet sitter들을 만나보세요.</font></a></li>
+
 	</ul>
 </nav> <!-- .cd-secondary-nav -->
 
