@@ -13,6 +13,7 @@
 	<link rel="stylesheet" href="css/style_filt.css"> <!-- Resource style -->
 	<link rel="stylesheet" href="styles.css"> <!-- Resource style -->  
 
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>
 
 
                                                                                                                                                                                
@@ -31,20 +32,13 @@
      <meta name="msapplication-TileColor" content="#3372DF">                                                                                                                   
                                                                                                                                                                                
      <link rel="shortcut icon" href="images/favicon.png">                                                                                                                      
-                                                                                                                                                                               
-     <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature
- phones -->                                                                                                                                                                    
-     <!--                                                                                                                                                                      
-     <link rel="canonical" href="http://www.example.com/">                                                                                                                     
-     -->                                                                                                                                                                       
+
+
                                                                                                                                                                                
 
-
-
-
-	<title>Auto-Hiding Navigation - with Sub Nav + Hero Image | CodyHouse</title>
 </head>
 <body>
+
 <header class="cd-auto-hide-header">
 	<div class="logo" style="padding-top:10px"><a href="#0"><%= image_tag("img/logo_black.png", width:"30%") %></a></div>
 
@@ -209,25 +203,25 @@
 	</ul>
 </nav> <!-- .cd-secondary-nav -->
 
-<main class="cd-main-content sub-nav-hero">
+<main class="cd-main-content sub-nav-hero" style="padding-top:40px">
 <!-- main content start -->
-
+<div class="row">
 <% for i in 1..12 %>
- <div class="demo-blog__posts mdl-grid">                                                              
-   <div class="mdl-card coffee-pic mdl-cell mdl-cell--8-col" style="width:250px; height:250px">                                         
-     <div class="mdl-card__media mdl-color-text--grey-50" style="background-image: url('img-<%=i%>.jpg'); height:200px">
-   <!--    <h3 style="margin-top:60px"><a href="entry.html">Coffee Pic</a></h3>  -->
-     </div>                                                                                           
-     <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">                            
-       <div class="minilogo"></div>                                                                   
-       <div>                                                                                          
-         <strong>The Newist</strong>                                                                  
-         <span>2 days ago</span>                                                                      
-       </div>                                                                                         
-     </div>                                                                                           
-   </div>                                                                                             
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail" style="height:400px">
+      <img src="img-<%=i%>.jpg" alt="...">
+      <div class="caption">
+        <h3>Thumbnail label</h3>
+        <p>...</p>
+        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+      </div>
+    </div>
+  </div>
 
 <% end %>
+</div>
+
+
 
 <!-- main content end -->
 </main> <!-- .cd-main-content -->
@@ -248,6 +242,8 @@
 <!-- Include Date Range Picker -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+
+
 
 <script>                        
 $(document).ready(function(){               
